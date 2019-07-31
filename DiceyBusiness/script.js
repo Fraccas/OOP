@@ -32,6 +32,7 @@ class Dice {
         let dDiv = $(`<div class="diceDiv" id="d${this.id}">${diceUni[this.num]}</div>`);
         diceContainer.append(dDiv);
    
+        // Single click to roll individual dice
         dDiv.click(function() { // Roll() undefined here
             this.num = Math.floor(Math.random() * 6) + 1;
             dDiv.text(diceUni[this.num]);
@@ -44,6 +45,7 @@ class Dice {
             }
         });
 
+        // Double click to remove individual dice 
         dDiv.dblclick(function () {
             // update removal in array
             let count = 0; // number of index in array
@@ -58,6 +60,7 @@ class Dice {
         });
     }
 
+    // Set number value to dice 1-6
     Roll() {
         this.num = Math.floor(Math.random() * 6) + 1;
         $('#d' + this.id).text(diceUni[this.num]);
