@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShapeUp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <div id="button-holder">
+            <div class="input-line">
+                <button type="button" id="rectB" class="btn btn-info">Create Rectangle</button>
+                <input type="number" id="rectWidth" placeholder="width">
+                <input type="number" id="rectHeight" placeholder="height">
+            </div>
+            <div class="input-line">
+                <button type="button" id="sqB" class="btn btn-info">Create Square</button>
+                <input type="number" id="sqLength" placeholder="length">
+            </div>
+            <div class="input-line">
+                <button type="button" id="cirB" class="btn btn-info">Create Circle</button>
+                <input type="number"id="cirRadius" placeholder="radius">
+            </div>
+            <div class="input-line">
+                <button type="button" id="triB" class="btn btn-info">Create Triangle</button>
+                <input type="number" id="triHeight" placeholder="height">
+            </div>
+        </div> 
+
+        <div id="draw-area">
+            <div id="draw-box">
+                <!--SHAPES GO HERE-->
+            </div>
+            <div id="side-panel">
+                <div id="sName">Shape Name:</div>
+                <div id="sWidth">Width:</div>
+                <div id="sHeight">Height:</div>
+                <div id="sRadius">Radius:</div>
+                <div id="sArea">Area:</div>
+                <div id="sPerimeter">Perimeter:</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
