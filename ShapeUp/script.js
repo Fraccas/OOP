@@ -46,7 +46,7 @@ class Shape {
 
     Draw (shape) {
         // set location random
-        let x = Math.floor(Math.random() * 500);
+        let x = Math.floor(Math.random() * 600);
         if (x + this.width > 600) x -= this.width;
         if (x < 0) x = 0;
 
