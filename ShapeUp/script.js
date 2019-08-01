@@ -62,6 +62,11 @@ class Shape {
         shape.click(function () {
             self.Describe();
         });
+
+        shape.dblclick(function() {
+            console.log('dbl click');
+            shape.remove();
+        })
     }
 
     Describe() {
